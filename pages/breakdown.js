@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Layout from '../components/layout';
 import { getItems, getDepartments, getLocations } from '../lib/read_data';
 
 
@@ -13,7 +12,6 @@ export async function getStaticProps()
 
 export default function Breakdown( { items, departments, locations } ) {
   return (
-    <Layout home>
       <div className="container">
       <h2>Item Breakdown</h2>
         <div className="row">
@@ -43,6 +41,5 @@ export default function Breakdown( { items, departments, locations } ) {
       </div>
       </div>
       </div>
-    </Layout>
   );
 }

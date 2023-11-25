@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Layout from '../components/layout';
 import { getItems, getDepartments, getLocations } from '../lib/read_data';
 import { useEffect, useRef } from 'react';
 import * as d3 from 'd3';
@@ -48,10 +47,8 @@ export default function Charts( { items, departments, locations } ) {
   }, [items, departments, locations]);  
 
   return (
-    <Layout home>
       <div className="container">
       <div ref={chartRef}></div>
       </div>
-    </Layout>
   );
 }

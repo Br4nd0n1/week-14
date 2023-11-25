@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Layout from '../components/layout';
 import { getGeneralsList } from '../lib/read_data';
 
 
@@ -11,7 +10,6 @@ export async function getStaticProps()
 
 export default function Home( { americanGenerals } ) {
   return (
-    <Layout home>
       <div className="container">
       <h1>List of Posts</h1>
       <div className="list-group">
@@ -25,6 +23,5 @@ export default function Home( { americanGenerals } ) {
         }
       </div>
       </div>
-    </Layout>
   );
 }

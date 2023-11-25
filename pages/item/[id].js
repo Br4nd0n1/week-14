@@ -1,4 +1,3 @@
-import Layout from '../../components/layout';
 import { getIdList, getPerson } from '../../lib/read_data';
 import Link from 'next/link';
 
@@ -27,7 +26,6 @@ export default function displayLieutenants( { personData } )
   let customFieldsData = Object.fromEntries(customFields.split(',').map(item => item.split(':')));
 
   return (
-    <Layout>
       <div className="container">
       <article className="card col">
         <div className="card-body">
@@ -45,6 +43,5 @@ export default function displayLieutenants( { personData } )
       </article>
       <Link href="/" className="btn btn-secondary">Back</Link>
       </div>
-    </Layout>
   );
 }
