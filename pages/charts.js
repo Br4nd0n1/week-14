@@ -45,7 +45,7 @@ export default function Charts( { items, departments, locations } ) {
       .attr('text-anchor', 'middle')
       .attr('dominant-baseline', 'central')
       .text(function(d, i) { return labels[i]; });
-  }, []);  
+  }, [items, departments, locations]);  
 
   return (
     <Layout home>
