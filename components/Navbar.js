@@ -15,6 +15,15 @@ function NavBar()
           <Link class="nav-link active" aria-current="page" href="/">Home</Link>
         </li>
         <li class="nav-item">
+          <Link class="nav-link" href="/items_only">Items</Link>
+        </li>
+        <li class="nav-item">
+          <Link class="nav-link" href="/departments_only">Departments</Link>
+        </li>
+        <li class="nav-item">
+          <Link class="nav-link" href="/locations_only">Locations</Link>
+        </li>
+        <li class="nav-item">
           <Link class="nav-link" href="/breakdown">Breakdown</Link>
         </li>
         <li class="nav-item">
