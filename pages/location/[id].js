@@ -42,7 +42,7 @@ export default function displayLieutenants( { personData } )
           <p className="form-control">Custom Post Location Phone Numver: {customFieldsData.location_phone_number}</p>
         </div>
       </article>
-      <a href="/" className="btn btn-secondary">Back</a>
+      <Link href="/" className="btn btn-secondary">Back</Link>
       </div>
     </Layout>
   );

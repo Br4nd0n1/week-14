@@ -42,7 +42,7 @@ export default function displayLieutenants( { personData } )
 
         </div>
       </article>
-      <a href="/" className="btn btn-secondary">Back</a>
+      <Link href="/" className="btn btn-secondary">Back</Link>
       </div>
     </Layout>
   );
