@@ -1,5 +1,6 @@
 import Layout from '../../components/layout';
 import { getIdList, getPerson } from '../../lib/read_data';
+import Link from 'next/link';
 
 export async function getStaticProps( { params } )
 {
